@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hunter — Validate smart contract exploitability before attackers do.</title>
+  <meta
+    name="description"
+    content="Hunter turns security findings into repo-native PoCs, controlled validation runs, and sponsor-ready evidence for smart contract security teams."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">Hunter</div>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#difference">Why Hunter</a>
+        <a href="#case-study">Case study</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Exploit validation for smart contract security teams</p>
+          <h1>Validate smart contract exploitability before attackers do.</h1>
+          <p class="subheadline">
+            Hunter turns security findings into repo-native PoCs, controlled validation runs,
+            and sponsor-ready evidence for smart contract security teams.
+          </p>
+          <p class="supporting-line">From finding to proof—in minutes, not days.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:hello@hunter-mvp.com">Request a walkthrough</a>
+            <a class="button secondary" href="#case-study">View case study</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="proof-strip">
+            <span>Exploit-aware detection</span>
+            <span>Runnable PoC generation</span>
+            <span>Repo-native harness lifting</span>
+            <span>Structured validation and evidence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How Hunter works</h2>
+        <div class="steps">
+          <article class="card">
+            <div class="step-number">1</div>
+            <h3>Scan and prioritize</h3>
+            <p>Hunter detects likely exploit families and ranks the shortest path from suspicion to proof.</p>
+          </article>
+          <article class="card">
+            <div class="step-number">2</div>
+            <h3>Generate repo-native scaffolds</h3>
+            <p>Hunter emits PoC starters that fit the target repository’s real harness and test layout.</p>
+          </article>
+          <article class="card">
+            <div class="step-number">3</div>
+            <h3>Run controlled validation</h3>
+            <p>Hunter executes the generated path in a bounded environment and classifies the observed result.</p>
+          </article>
+          <article class="card">
+            <div class="step-number">4</div>
+            <h3>Export evidence and remediation context</h3>
+            <p>Hunter links findings, probes, logs, traces, and likely fix direction into sponsor-ready output.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="difference" class="section alt">
+      <div class="container">
+        <h2>Why Hunter is different</h2>
+        <div class="three-up">
+          <article class="card">
+            <h3>Exploit-aware by design</h3>
+            <p>Hunter prioritizes exploit families instead of stopping at flat alerts, helping operators focus on the shortest path from suspicion to proof.</p>
+          </article>
+          <article class="card">
+            <h3>Native to the target repo</h3>
+            <p>Hunter generates proof scaffolds that fit the target repository’s own test layout and harness, reducing wasted time and fake setup.</p>
+          </article>
+          <article class="card">
+            <h3>Built for validation and evidence</h3>
+            <p>Hunter links generated probes, observed failures, logs, traces, and remediation context into structured outputs for real audit workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="case-study" class="section">
+      <div class="container">
+        <h2>Phoenix Bonds: from alert to proof shape</h2>
+        <div class="case-study">
+          <p>Hunter was used to drive a repo-native validation flow around an underwater-settlement failure shape in Phoenix Bonds.</p>
+          <div class="case-grid">
+            <div class="card">
+              <h3>Workflow</h3>
+              <ul>
+                <li>exploit-family prioritization</li>
+                <li>generated AVA repo-native probes</li>
+                <li>harness-lifted two-user exit-order scenarios</li>
+                <li>observed later-user degradation after first-user exit</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Observed result</h3>
+              <ul>
+                <li>Alice exited first after the price moved against pending notes</li>
+                <li>Bob’s later cancel path failed with a zero-transfer panic</li>
+                <li>Bob’s later commit path failed with an overflow panic</li>
+                <li>Bob’s pending note remained stuck after Alice exited first</li>
+              </ul>
+            </div>
+          </div>
+          <p class="case-conclusion">This is the workflow Hunter is built for: not just finding suspicious code, but producing reproducible exploit evidence tied to the target repository’s real harness.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section alt">
+      <div class="container closing">
+        <h2>Product-first smart contract security</h2>
+        <p>Hunter is a product-first smart contract security platform focused on exploit validation.</p>
+        <p class="small">Not a generic scanner. Not an audit marketplace. Built for teams that need stronger proof, better evidence, and faster exploit confirmation.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Hunter</strong>
+        <p>Exploit-validation tooling for smart contract security teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@hunter-mvp.com">hello@hunter-mvp.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
