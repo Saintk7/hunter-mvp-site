@@ -557,6 +557,26 @@ li {
   background: linear-gradient(180deg, rgba(255, 252, 247, 0.98) 0%, rgba(246, 238, 224, 0.96) 100%);
 }
 
+.pilot-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.98) 0%, rgba(246, 238, 224, 0.96) 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.pilot-note h3 {
+  margin-bottom: 0.45rem;
+}
+
+.pilot-note p:last-child {
+  margin-bottom: 0;
+}
+
 .quote-mark {
   margin: 0;
   color: var(--copper);
@@ -612,13 +632,18 @@ li {
   .hero-grid,
   .platform-grid,
   .case-layout,
-  .footer-grid {
+  .footer-grid,
+  .pilot-note {
     grid-template-columns: 1fr;
   }
 
   .split-heading {
     display: grid;
     align-items: start;
+  }
+
+  .pilot-note {
+    display: grid;
   }
 
   .nav {
