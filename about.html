@@ -121,8 +121,57 @@
       <div>
         <div class="footer-heading">Base</div>
         <p class="footer-copy">Zurich, Switzerland</p>
+        <p class="footer-meta-link"><button class="text-link" type="button" onclick="hunterOpenCookieSettings()">Cookie Settings</button></p>
       </div>
     </div>
   </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <div class="cookie-inner">
+      <div class="cookie-copy">
+        <span class="cookie-icon" aria-hidden="true">◔</span>
+        <p>
+          This website uses <a href="privacy.html">cookies to enhance your experience</a>.
+          By continuing, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="button primary cookie-btn" type="button" onclick="hunterAcceptCookies()">Accept Cookies &amp; Continue</button>
+        <button class="button secondary cookie-btn" type="button" onclick="hunterRejectCookies()">Reject Additional Cookies</button>
+        <button class="button secondary cookie-btn" type="button" onclick="hunterOpenCookieSettings()">Cookie Settings</button>
+      </div>
+      <div class="cookie-settings" aria-label="Cookie settings">
+        <div class="cookie-settings-head">
+          <strong>Cookie preferences</strong>
+          <button class="text-link" type="button" onclick="hunterCloseCookieSettings()">Close</button>
+        </div>
+        <div class="cookie-setting-row">
+          <div>
+            <div class="cookie-setting-title">Strictly necessary</div>
+            <div class="cookie-setting-copy">Required for basic website operation and consent storage.</div>
+          </div>
+          <label class="cookie-switch">
+            <input type="checkbox" checked disabled />
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <div class="cookie-setting-row">
+          <div>
+            <div class="cookie-setting-title">Analytics</div>
+            <div class="cookie-setting-copy">Allows optional analytics or measurement tools when enabled.</div>
+          </div>
+          <label class="cookie-switch">
+            <input id="cookieAnalytics" type="checkbox" />
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <div class="cookie-settings-actions">
+          <button class="button primary cookie-btn" type="button" onclick="hunterSaveCookieSettings()">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="cookies.js"></script>
 </body>
 </html>
