@@ -13,7 +13,13 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top">Hunter</a>
+      <a class="brand" href="#top" aria-label="Hunter home">
+        <img class="brand-logo" src="hunter-logo.svg" alt="Hunter logo" />
+        <span class="brand-lockup">
+          <span class="brand-name">Hunter</span>
+          <span class="brand-tagline">Semantic Protocol Logic Validation</span>
+        </span>
+      </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#platform">Platform</a>
         <a href="#proof">Why Hunter</a>
@@ -28,7 +34,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Protocol security that survives scrutiny</p>
+          <p class="eyebrow">Semantic Protocol Logic Validation</p>
           <h1>Hunter: The autonomous validation layer for protocol logic.</h1>
           <p class="subheadline">
             Moving security from suspicious signals to deterministic exploit proofs.
@@ -349,9 +355,15 @@
   </main>
 
   <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
+      <div class="container footer-grid">
       <div>
-        <div class="footer-brand">Hunter</div>
+        <div class="footer-brand-wrap">
+          <img class="footer-logo" src="hunter-logo.svg" alt="Hunter logo" />
+          <div>
+            <div class="footer-brand">Hunter</div>
+            <p class="footer-mini-tag">Semantic Protocol Logic Validation</p>
+          </div>
+        </div>
         <p class="footer-copy">Proof-first protocol security for technical review, diligence, and handoff.</p>
       </div>
       <div>
