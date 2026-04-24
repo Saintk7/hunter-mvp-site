@@ -24,6 +24,7 @@
         <a href="#platform">Platform</a>
         <a href="#proof">Why Hunter</a>
         <a href="#cases">Case studies</a>
+        <a href="about.html">About</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="button nav-cta" href="mailto:hello@hunter-mvp.com">Request a walkthrough</a>
@@ -377,5 +378,33 @@
       </div>
     </div>
   </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <div class="cookie-inner">
+      <div class="cookie-copy">
+        <span class="cookie-icon" aria-hidden="true">◔</span>
+        <p>
+          This website uses <a href="#">cookies to enhance your experience</a>.
+          By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="button primary cookie-btn" type="button" onclick="localStorage.setItem('hunter_cookie_choice','accept'); document.getElementById('cookieBanner').style.display='none';">Accept Cookies &amp; Continue</button>
+        <button class="button secondary cookie-btn" type="button" onclick="localStorage.setItem('hunter_cookie_choice','reject'); document.getElementById('cookieBanner').style.display='none';">Reject Additional Cookies</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      try {
+        var choice = localStorage.getItem("hunter_cookie_choice");
+        if (choice) {
+          var banner = document.getElementById("cookieBanner");
+          if (banner) banner.style.display = "none";
+        }
+      } catch (err) {}
+    })();
+  </script>
 </body>
 </html>
