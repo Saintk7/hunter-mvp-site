@@ -1,0 +1,36 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hunterStroke" x1="40" y1="28" x2="216" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6D8"/>
+      <stop offset="1" stop-color="#15324B"/>
+    </linearGradient>
+    <linearGradient id="hunterNode" x1="74" y1="52" x2="186" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6ED6D4"/>
+      <stop offset="1" stop-color="#1E4363"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="12" y="12" width="232" height="232" rx="40" fill="#F7FAFC"/>
+  <rect x="12" y="12" width="232" height="232" rx="40" stroke="#D7E4EF" stroke-width="2"/>
+
+  <path d="M74 52L74 204" stroke="url(#hunterStroke)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M182 52L182 204" stroke="url(#hunterStroke)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M74 128L182 128" stroke="url(#hunterStroke)" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M74 52L128 128L74 204" stroke="url(#hunterStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M182 52L128 128L182 204" stroke="url(#hunterStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M40 86L74 52L128 128L182 52L216 86" stroke="url(#hunterStroke)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
+  <path d="M40 170L74 204L128 128L182 204L216 170" stroke="url(#hunterStroke)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
+
+  <circle cx="74" cy="52" r="10" fill="url(#hunterNode)"/>
+  <circle cx="182" cy="52" r="10" fill="url(#hunterNode)"/>
+  <circle cx="74" cy="128" r="10" fill="url(#hunterNode)"/>
+  <circle cx="182" cy="128" r="10" fill="url(#hunterNode)"/>
+  <circle cx="74" cy="204" r="10" fill="url(#hunterNode)"/>
+  <circle cx="182" cy="204" r="10" fill="url(#hunterNode)"/>
+  <circle cx="128" cy="128" r="11" fill="#58A6D8"/>
+  <circle cx="40" cy="86" r="7" fill="#15324B" opacity="0.9"/>
+  <circle cx="216" cy="86" r="7" fill="#15324B" opacity="0.9"/>
+  <circle cx="40" cy="170" r="7" fill="#15324B" opacity="0.9"/>
+  <circle cx="216" cy="170" r="7" fill="#15324B" opacity="0.9"/>
+</svg>
